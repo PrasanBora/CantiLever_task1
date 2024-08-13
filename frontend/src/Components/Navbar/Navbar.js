@@ -11,9 +11,10 @@ import { Link } from "react-router-dom";
   const [menu,setMenu] = useState("shop");
   return (
     <div className='navbar'>
+
        <div className='nav_logo'>
         <img src= {logo} alt ="logo" />
-        <p>SHOP</p>
+        {/* <p>SHOP</p> */}
        </div>
 
        <ul className='nav_menu'>

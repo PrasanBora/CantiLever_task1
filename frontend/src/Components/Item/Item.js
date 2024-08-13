@@ -1,10 +1,23 @@
 
 import React from 'react'
+import './Item.css'
 
-const Item = () => {
+const Item = (props) => {
   return (
     <div className='item'>
-      Item
+      
+      <img  src= {props.image} alt ="" />
+       <p> {props.name}</p>
+
+        <div className='item-price'>
+         <div className='item-pricce-new'>
+             Rs.{props.new_price}
+         </div>
+         <div className='item-price-old'>
+             Rs.{props.old_price}
+         </div> 
+        </div>
+
     </div>
   )
 }

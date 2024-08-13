@@ -1,29 +1,17 @@
 .navbar {
     display: flex;
     justify-content: space-around;
-    padding: 16px;
+    padding: o.7vh;
     box-shadow: 0 1px 3px -2px black;
-}
-
-.nav_logo {
-    display: flex;
-    align-items: center;
-    gap: 10xp;
-}
-
-.nav_logo p {
-    color: #171717;
-    font-size: 38px;
-    font-weight: 600;
 }
 
 .nav_menu {
     display: flex;
     align-items: center;
     list-style: none;
-    gap: 50px;
+    gap: 3vw;
     color: #626262;
-    font-size: 20px;
+    font-size: 2vw;
     font-weight: 500;
 }
 
@@ -32,7 +20,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3px;
     cursor: pointer;
 }
 
@@ -47,20 +34,24 @@
 .cart {
     display: flex;
     align-items: center;
-    gap: 45px;
+    gap: 4vh;
 }
 
 .cart button {
-    width: 157px;
-    height: 58px;
+    width: 8vw;
+    height: 4vw;
     outline: none;
     border: 1px solid #7a7a7a;
     border-radius: 75px;
     color: #515151;
-    font-size: 20px;
+    font-size: 2vw;
     font-weight: 500;
     background: white;
     cursor: pointer;
+}
+
+.cart img{
+    height: 4vw;
 }
 
 .cart button:active {
