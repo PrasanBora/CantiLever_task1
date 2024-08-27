@@ -24,13 +24,13 @@ const CartItems = () => {
       if (cartItems[e.id] > 0) {
         return (
           <div key={e.id}>
-             <p>product Id: {e.id}</p>
+             {/* <p>product Id: {e.id}</p> */}
               <div className="cartItems-format cartItems-format-main">
               <img src={e.image} alt="" className="cartItem-product-icon" />
               <p>{e.name}</p>
-              <p>$ {e.new_price}</p>
+              <p>Rs. {e.new_price}</p>
               <button className="cartItem-quantity">{cartItems[e.id]}</button>
-              <p>$ {e.new_price * cartItems[e.id]}</p>
+              <p>Rs. {e.new_price * cartItems[e.id]}</p>
               <img
                 className="cartItem-remove-icon"
                 src={remove_icon}
@@ -53,7 +53,7 @@ const CartItems = () => {
         <div>
           <div className="cartItems-total-item">
             <p>SubTotal</p>
-            <p>${getTotalCartAmount()}</p>
+            <p>Rs.{getTotalCartAmount()}</p>
           </div>
           <hr />
 
@@ -65,7 +65,7 @@ const CartItems = () => {
 
           <div className="cartItems-total-item">
               <h3>Total</h3>
-              <h3>${getTotalCartAmount()}</h3>
+              <h3>Rs.{getTotalCartAmount()}</h3>
           </div>
 
         </div>
